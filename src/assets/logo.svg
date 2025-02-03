@@ -1,0 +1,34 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients and filters -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="100%" stop-color="#4ECDC4" />
+    </linearGradient>
+
+    <!-- Enhanced drop shadow filter -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" />
+      <feOffset dx="0" dy="6" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle with gradient and border -->
+  <circle cx="150" cy="150" r="140" fill="url(#bgGradient)" stroke="#FFFFFF" stroke-width="10" />
+
+  <!-- R logo path with bolder appearance -->
+  <path
+    d="M100 70h70c44.183 0 80 35.817 80 80 0 33.137-20.863 61.887-50.5 73.5L240 270h-60l-35-40h-15v40h-30V70zm70 120c22.091 0 40-17.909 40-40s-17.909-40-40-40h-40v80h40z"
+    fill="#FFFFFF"
+    filter="url(#shadow)"
+    transform="translate(5, 5)" 
+  />
+</svg>

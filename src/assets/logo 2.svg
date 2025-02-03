@@ -1,0 +1,33 @@
+ <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#F8F9FA" />
+          <stop offset="100%" stopColor="#E9ECEF" />
+        </linearGradient>
+      </defs>
+
+      <rect width="300" height="300" fill="url(#bgGradient)" />
+
+      <path
+        d="M60 50 h80 
+           a70,70 0 0,1 0,140 
+           h-30
+           l50 60
+           h-40
+           l-45 -60
+           h-15
+           v60
+           h-35
+           v-200
+           Z
+           M140 130
+           a40,40 0 0,0 0,-80
+           h-45
+           v80
+           h45
+           Z"
+        fill="#282642"
+      />
+
+      <circle cx="240" cy="240" r="20" fill="#FF4C60" />
+    </svg>
